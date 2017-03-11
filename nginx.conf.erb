@@ -17,7 +17,8 @@ http {
 
     location / {
       resolver 8.8.8.8 valid=30s;
-      proxy_pass http://proficionym-api;
+      set $upstream proficionym-api;
+      proxy_pass http://$upstream;
     }
   }
 
