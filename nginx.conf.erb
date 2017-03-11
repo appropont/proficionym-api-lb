@@ -1,0 +1,11 @@
+server {
+    listen 80;
+
+    location / {
+        proxy_pass http://proficionym-api;
+    }
+}
+
+upstream proficionym-api {
+  server proficionym-api-go.appropont.com;
+}
