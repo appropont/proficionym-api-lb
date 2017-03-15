@@ -1,0 +1,3 @@
+--link proficionym-api-go:proficionym-api-go
+-v /home/dokku/proficionym-api
+-v /home/dokku/proficionym-api-go
